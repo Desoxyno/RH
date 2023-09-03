@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+/* Réinitialisation des marges et des espacements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour les animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Appliquez des animations aux éléments */
+.animated-text {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease; /* Ajout de la transition */
+}
+
+.animated-text:hover {
+    transform: scale(1.1); /* Agrandissement au survol (1.1 signifie 110%) */
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #f0f0f0; /* Couleur de fond pour la page */
+}
+
+/* Style pour l'en-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Style pour la barre de navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff5733; /* Changement de couleur au survol */
+}
+
+/* Style pour la section principale */
+#test {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    color: #333;
+}
+
+#text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#btn {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #ff2800; /* Changement de couleur au survol */
+}
+
+/* Style pour le pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Ajoutez d'autres styles CSS au besoin */
